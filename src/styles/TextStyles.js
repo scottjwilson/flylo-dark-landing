@@ -30,6 +30,7 @@ export const H3Small = styled.h3`
 export const H4 = styled.h4`
   font-size: 24px;
   line-height: 32px;
+  margin-bottom: 0.5rem;
 `
 
 export const BodyIntro = styled.p`
