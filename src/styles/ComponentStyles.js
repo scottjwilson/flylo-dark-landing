@@ -9,9 +9,14 @@ export const Container = styled.div`
 `
 export const Button = styled.button`
   color: white;
-  width: 280px;
+  width: 100%;
+
   background: linear-gradient(134.79deg, #63e1d9 -42.11%, #34a0cd 100%);
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
   border-radius: 999em;
   padding: 1rem 0;
+
+  @media ${device.laptop} {
+    width: 280px;
+  }
 `

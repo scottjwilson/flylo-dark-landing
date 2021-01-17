@@ -7,7 +7,7 @@ const Image = () => {
     query {
       getImage: file(relativePath: { eq: "illustration-stay-productive.png" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 600) {
             ...GatsbyImageSharpFluid_tracedSVG
           }
         }

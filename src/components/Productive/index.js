@@ -1,15 +1,15 @@
 import React from "react"
-import { Row, Col, Title } from "./Styles"
+import { Row, ImageBox, TextBox, Title } from "./Styles"
 import { BodyMain } from "../../styles/TextStyles"
 import Image from "./Image"
 export const Productive = () => {
   return (
     <>
       <Row>
-        <Col>
+        <ImageBox>
           <Image />
-        </Col>
-        <Col>
+        </ImageBox>
+        <TextBox>
           <Title>Stay productive, wherever you are</Title>
           <BodyMain>
             Never let location be an issue when accessing your files. Fylo has
@@ -20,7 +20,7 @@ export const Productive = () => {
             for live collaboration. No email attachments required.
           </BodyMain>
           <p>See how Fylo works </p>
-        </Col>
+        </TextBox>
       </Row>
     </>
   )
