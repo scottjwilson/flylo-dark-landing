@@ -4,7 +4,12 @@ import { device } from "../../styles/MediaQueries"
 import { colors } from "../../styles/ColorStyles"
 
 export const Wrapper = styled.section`
-  margin: 8rem auto;
+  max-width: 1400px;
+
+  margin: 4rem auto 2rem auto;
+  @media ${device.laptop} {
+    margin: 8rem auto 4rem auto;
+  }
 `
 export const Row = styled.div`
   max-width: 1400px;
@@ -36,19 +41,14 @@ export const CardUser = styled.div`
 `
 
 export const ImageWrapper = styled.div`
-  max-width: 1400px;
-  margin: 0 auto;
-
   z-index: -100;
   position: relative;
   top: 40px;
-  left: 10px;
+
   /* left: 25px; */
   padding-left: 2.8rem;
 
   @media ${device.laptop} {
-    max-width: 1400px;
-
     padding-left: 0;
   }
 `
